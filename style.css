@@ -112,7 +112,8 @@ body {
 }
 
 .front {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/poke-bg.gif);
+  /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/poke-bg.gif);*/
+  background-image: url(/imgs/robloxteste5.jpg);
 }
 .front h1 {
   position: relative;
