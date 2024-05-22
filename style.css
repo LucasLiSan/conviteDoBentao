@@ -108,18 +108,16 @@ body {
 }
 .face:last-of-type {
   transform: translateZ(-3px) rotateY(180deg);
-  background-size: 130% auto;
+  background-size: 100% 100%;
 }
 
 .front {
-  /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/poke-bg.gif);*/
-  background-image: url(/imgs/robloxteste5.jpg);
+  background-image: url(robloxFundoFront.jpg);
 }
 .front h1 {
   position: relative;
-  font: normal 3em/0.9 "Slackey", sans-serif;
-  letter-spacing: -2px;
-  color: #ffce00;
+  font: normal 4em/0.9 "Bebas Neue", sans-serif;
+  color: #d68220;
   padding: 30px 0 0;
   margin: 0;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -135,24 +133,86 @@ body {
   margin-top: 40px;
   padding: 0 20%;
   margin: auto;
-  line-height: 1.3;
 }
 .front h1 .extrude {
-  text-shadow: 0 1px 0 #e6b900, 0 2px 0 #cca500, 0 3px 0 #b39000, 0 4px 0 #997c00, 0 5px 0 #806700, 0 6px 1px rgba(0, 0, 0, 0.0980392), 0 0 5px rgba(0, 0, 0, 0.0980392), 0 1px 3px rgba(0, 0, 0, 0.298039), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.247059);
+  margin-top: 10rem;
+  text-shadow:  0 1px 0 #ffffff, 
+                0 2px 0 #b1b1b1, 
+                0 3px 0 #626262,
+                0 4px 0 #363636,
+                0 5px 0 #000000,
+                0 6px 1px rgba(0, 0, 0, 0.0980392),
+                0 0 5px rgba(0, 0, 0, 0.0980392),
+                0 1px 3px rgba(0, 0, 0, 0.298039),
+                0 3px 5px rgba(0, 0, 0, 0.2),
+                0 5px 10px rgba(0, 0, 0, 0.247059)
+  ;
 }
 
 .face.back {
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/poke-bg.jpg);
+  background-image: url(robloxFundoBack.jpg);
   color: #000;
   overflow: hidden;
 }
-.face.back img {
+.face.back div {
+  color: #ffffff;
   position: absolute;
-  top: 60px;
-  display: inline-block;
-  width: 90%;
-  left: 50%;
-  transform: translate(-50%, 0);
+  top: 17rem;
+  width: 100%;
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.info {
+  display: grid;
+  height: 60%;
+  grid-template: 
+    "convite convite convite" 20%
+    "dSem dMes hora" 20%
+    "lugar lugar lugar" 20%
+    / 1fr 1fr 1fr
+  ;
+  justify-items: center;
+  align-items: center;
+}
+
+.info p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.info p:nth-child(2), p:nth-child(3) {
+  border-right: dashed 4px #ff0000;
+}
+
+.convite {
+  grid-area: convite;
+  text-transform: uppercase;
+}
+
+.dSem {
+  grid-area: dSem;
+}
+
+.dMes {
+  grid-area: dMes;
+}
+
+.local {
+  grid-area: lugar;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.local:hover {
+  color: #005da6;
+}
+
+.hora {
+  grid-area: hora;
 }
 
 button {
@@ -165,7 +225,7 @@ button {
   position: absolute;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   left: 50%;
-  top: 170px;
+  top: 200px;
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   z-index: 1;
